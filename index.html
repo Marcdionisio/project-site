@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FOR MY LOVE — Happy Birthday</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="brand">FOR MY LOVE</h1>
+      <div class="from-line"><span id="fromName">Shiny</span></div>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#letters">Letters</a>
+        <a href="#music">Music</a>
+        <a href="#flowers">Flowers</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="section container">
+      <h2 class="hero-title">HAPPY BIRTHDAY LOVE</h2>
+      <p class="hero-sub">Wishing you soft moments and quiet joy today.</p>
+
+      <div class="slideshow">
+        <img src="image/img1.jpg" alt="Memory 1" class="slide active">
+        <img src="image/img0.jpg" alt="Memory 2" class="slide">
+        <button class="prev">&larr;</button>
+        <button class="next">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <!-- LETTERS -->
+    <section id="letters" class="section container">
+      <h3 class="section-title">LETTERS</h3>
+
+      <article class="parchment">
+        <div class="love-envelope" id="loveEnvelope" tabindex="0" role="button" aria-expanded="false" aria-pressed="false" title="Click or press Enter / Space to open the letter">
+          <div class="envelope" aria-hidden="false">
+            <div class="flap" data-flap>
+              <button id="heartSeal" class="seal" aria-label="Open the love letter" title="Open the love letter">
+                <svg class="seal-svg" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6.42 3.42 5 5.5 5c1.54 0 3.04.99 3.57 2.36h.87C14.46 5.99 15.96 5 17.5 5 19.58 5 21 6.42 21 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </button>
+            </div>
+
+            <div class="letter" data-letter id="letterContent" aria-hidden="true">
+              <div class="letter-inner">
+                <h4 class="letter-heading">To my love,</h4>
+                <p class="letter-text">
+                  Happy Birthday, my love. Today we celebrate the day you came into this world.
+                  Thank you for always being there through every high and low.
+                </p>
+                <p class="letter-text">
+                  This page is a small gift to show how much you mean to me. I love you endlessly.
+                </p>
+                <p class="letter-name">— Marky!</p>
+              </div>
+            </div>
+
+            <div class="envelope-body" aria-hidden="true"></div>
+          </div>
+
+          <div class="envelope-hint">Open</div>
+        </div>
+      </article>
+    </section>
+
+    <!-- MUSIC -->
+    <section id="music" class="section container">
+      <h3 class="section-title">MUSIC</h3>
+
+      <div class="music-wrap">
+        <div id="thumb" class="thumb" style="background-image: url('image/img2.jpg');"></div>
+        <div class="music-controls">
+          <div class="track-title">Saksi Ang Langit</div>
+          <audio id="audio" src="music/music.mp3" preload="metadata"></audio>
+          <button id="playBtn" class="playbtn">Play</button>
+          <div id="audioStatus" class="audio-status">Click here!</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLOWERS -->
+    <section id="flowers" class="section container">
+      <h3 class="section-title">FLOWERS</h3>
+
+      <!-- small structural addition: inner wrapper that sizes to the image.
+           This keeps the sticker backing sized to the image and allows the whole thing to center easily. -->
+      <div class="bouquet-wrap">
+        <div class="bouquet-inner">
+          <img id="flowersImg"
+               class="flowers-image"
+               src="image/bouquet.png"
+               alt="Bouquet sticker" />
+        </div>
+      </div>
+
+      <div class="flowers-message-wrap">
+        <p class="flowers-message">For you, my love!</p>
+      </div>
+      <div class="petal-area"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-note">
+      <p>Made with love by Marky!♡</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
